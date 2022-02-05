@@ -143,6 +143,9 @@ class SaveAndLoad(Gimp.PlugIn):
 
                     # compute something and resave image
                     mode = "binary"
+                    if mode_radiobutton.get_active():
+                        mode = "smooth"
+                    # print('!!!!!', mode_radiobutton.get_active(), mode)
                     img = Image.open(input_path)
                     create_rgba(mode, img).save(result_path)
 
