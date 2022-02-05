@@ -122,7 +122,7 @@ class SaveAndLoad(Gimp.PlugIn):
 
             builder = Gtk.Builder()
             dir_path = os.path.dirname(os.path.realpath(__file__))
-            builder.add_from_file(os.path.join(dir_path, "ui.glade"))
+            builder.add_from_file(os.path.join(dir_path, "UI.glade"))
 
             box = builder.get_object("box")
             dialog.get_content_area().add(box)
@@ -136,8 +136,8 @@ class SaveAndLoad(Gimp.PlugIn):
                     #base_dir = buffer.get_text(buffer.get_start_iter(), buffer.get_end_iter(), True)
                     dir_path = os.path.dirname(os.path.realpath(__file__))
 
-                    input_path = os.path.join(dir_path, "results/cache.png")
-                    result_path = os.path.join(dir_path, "results/cache_out.png")
+                    input_path = os.path.join(dir_path, "cache.png")
+                    result_path = os.path.join(dir_path, "cache_out.png")
                     # save
                     save_image(image, drawable, input_path)
 
@@ -150,7 +150,7 @@ class SaveAndLoad(Gimp.PlugIn):
                     img = load_image(result_path)
                     result_layer = img.get_active_layer()
                     layer = Gimp.Layer.new_from_drawable(result_layer, image)
-                    layer.set_name("loaded")
+                    layer.set_name("segmented")
 
                     position = Gimp.get_pdb().run_procedure('gimp-image-get-item-position',
                                  [image,
