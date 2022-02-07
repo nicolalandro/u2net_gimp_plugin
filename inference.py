@@ -1,4 +1,5 @@
 import copy
+import os
 
 import numpy as np
 import onnxruntime
@@ -35,7 +36,8 @@ def run_inference(onnx_session, input_size, image):
     return onnx_result
 
 # Load model
-onnx_session = onnxruntime.InferenceSession("u2net.onnx")
+dir_path = os.path.dirname(os.path.realpath(__file__))
+onnx_session = onnxruntime.InferenceSession(os.path.join(dir_path,"u2net.onnx"))
 
 def create_rgba(mode, image):
     out = run_inference(
