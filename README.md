@@ -1,5 +1,5 @@
 # U2Net Gimp Plugin
-A plugin for GIMP that use [u2-Net](https://github-com.translate.goog/xuebinqin/U-2-Net?_x_tr_sl=ja&_x_tr_tl=en&_x_tr_hl=it) for segmentation, you can try a demo on [HuggingFace Spaces](https://huggingface.co/spaces/xiongjie/u2net_rgba).
+A plugin for GIMP that use [u2-Net](https://github.com/xuebinqin/U-2-Net) for segmentation, you can try a demo on [HuggingFace Spaces](https://huggingface.co/spaces/xiongjie/u2net_rgba).
 
 ## Usage
 |step1: select the filter|sep2: select the mode and click ok|step3: hide the starting layer |
