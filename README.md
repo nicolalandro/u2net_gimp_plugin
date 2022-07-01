@@ -1,5 +1,5 @@
-# U2Net Gimp Plugin
-A plugin for GIMP that use [u2-Net](https://github.com/xuebinqin/U-2-Net) for segmentation, you can try a demo on [HuggingFace Spaces](https://huggingface.co/spaces/xiongjie/u2net_rgba).
+# U<sup>2</sup>-Net GIMP Plugin
+A plugin for GIMP that use [U<sup>2</sup>-Net](https://github.com/xuebinqin/U-2-Net) for segmentation, you can try a demo on [HuggingFace Spaces](https://huggingface.co/spaces/xiongjie/u2net_rgba).
 
 ## Usage
 |step1: select the filter|sep2: select the mode and click ok|step3: hide the starting layer |
@@ -7,7 +7,7 @@ A plugin for GIMP that use [u2-Net](https://github.com/xuebinqin/U-2-Net) for se
 |![](imgs/demo1.png)|![](imgs/demo2.png)|![](imgs/demo3.png)|
 
 ## Installation
-1. Clone repo into your GIMP plugin folder (We need GIMP 2.99.* or greater)
+1. Clone repo into your GIMP plugin folder (requires GIMP 2.99.* or greater)
 
     ```bash
     # cd into GIMP folder 
